@@ -4,14 +4,9 @@ Alias = --Mk--
 
 This script is open soure and of so open to editing and use as you wish
 This script is dependent on socket module
-This module provides access to the BSD socket interface. It is available on all modern Unix systems, Windows, MacOS, and probably additional platforms.
-Before using this script first install soket using 
-pip install socket
-if you do not have it  
+This module provides access to the BSD socket interface. It is available on all modern Unix systems, Windows, MacOS, and probably additional platforms.  
 '''
-import sys
 import socket
-from subprocess import call, PIPE, STDOUT
 
 def main():	
 	print connection_test()
