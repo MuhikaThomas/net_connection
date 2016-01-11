@@ -11,7 +11,10 @@ This method is unpreferable since urllib provides a high-level interface and hen
 import urllib
 
 def main():
-	connection_try()
+	if connection_try():
+		print("Cheching internet access ... TRUE")
+	else:
+		print("Cheching internet access ... FALSE\n Check your internet connection")	
 	
 def connection_try():
 	locale ='http://google.com'
@@ -20,9 +23,8 @@ def connection_try():
 		return True
 	except:
 		return False
-if connection_try():
-	print("Cheching internet access ... TRUE")
-else:
-	print("Cheching internet access ... FALSE\n Check your internet connection")	
+		
+if __name__ == '__main__':	
+	main()
 
 
